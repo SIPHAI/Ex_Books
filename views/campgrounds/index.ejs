@@ -1,10 +1,14 @@
 <% layout('layouts/boilerplate')%>
-<!-- <div id="cluster-map"></div> -->
-<!-- <h1>All Books</h1> -->
 
-<!-- <div>
-  <a href="/campgrounds/new">Add Books</a>
-</div> -->
+<div class="collapse navbar-collapse search " id="expandme">
+  <div class="navbar-nav navbar navbar-expand-sm">
+    <form  id="search-books">
+     <label  for="search"></label>
+        <input class="input1 " type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Book..." title="Type in a name">
+     <button class="input" name="reset" type="reset">Reset</button>
+    </form>
+  </div>
+</div>
 <% for (let campground of campgrounds){%>
 <div class="card" mb-3>
   <div class="row">
